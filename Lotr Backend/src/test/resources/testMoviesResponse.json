@@ -1,0 +1,30 @@
+{
+  "docs": [
+    {
+      "_id": "abc123",
+      "name": "How Big Business Stole from Gollum",
+      "runtimeInMinutes": 10,
+      "budgetInMillions": 2,
+      "boxOfficeRevenueInMillions": 123,
+      "academyAwardNominations": 100,
+      "academyAwardWins": 99,
+      "rottenTomatoesScore": 100
+    },
+    {
+      "_id": "def456",
+      "name": "Where were the Eagles?",
+      "runtimeInMinutes": 60,
+      "budgetInMillions": 8374,
+      "boxOfficeRevenueInMillions": 10,
+      "academyAwardNominations": 45,
+      "academyAwardWins": 32,
+      "rottenTomatoesScore": 14
+    }
+  ],
+  "total": 2,
+  "limit": 1000,
+  "offset": 0,
+  "page": 1,
+  "pages": 1
+
+}
