@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Movies from '../views/MoviesView.vue'
-import MovieQuote from '@/views/MovieQuote.vue'
+import CharacterQuote from '@/views/CharacterQuote.vue'
 import Characters from '@/views/CharactersView.vue'
 import Favorites from '@/views/FavoritesView.vue'
 
@@ -25,9 +25,9 @@ const routes = [
     component: Characters
   },
   {
-    path: '/movie-quote',
-    name: 'movie-quote',
-    component: MovieQuote
+    path: '/character-quote',
+    name: 'character-quote',
+    component: CharacterQuote
   },
   {
     path: '/favorites',

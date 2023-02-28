@@ -17,7 +17,7 @@ export default {
     },
     methods: {
         removeFromFavorites(characterId) {
-            if (confirm("Remove character from your favorites?")){
+            //if (confirm("Remove character from your favorites?")){
                 backendService.deleteCharacterFromDB(characterId).then((response) => {
                     if (response.status == 204){
                         console.log(response);
@@ -28,7 +28,7 @@ export default {
                     console.log(response);
                     alert("Error removing character from favorites");
                 });
-            }
+            //}
         }
     }
 }

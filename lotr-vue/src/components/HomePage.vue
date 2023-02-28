@@ -1,11 +1,12 @@
 <template>
     <div class="home-container">
         <h1>Welcome to The Lord of the Rings Archive</h1>
-        <h2>Leverage 'The One' API to explore the LOTR Movies and Characters!</h2>
+        <h2>Leverage 'The One' API to explore your favorite LOTR Movies and Characters!</h2>
     </div>
 </template>
 
 <script>
+
 export default {
     name: 'HomePage'
 

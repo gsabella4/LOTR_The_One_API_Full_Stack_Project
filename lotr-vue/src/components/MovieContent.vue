@@ -1,8 +1,6 @@
 <template>
   <div class="card">
-    <router-link :to="{ name: 'movie-quote', params: { id: movie._id }}">
     <h2 class="movie-name">{{ movie.name }}</h2>
-    </router-link>
     <p>Runtime in Minutes: {{ movie.runtimeInMinutes }}</p>
     <p>Budget: ${{ movie.budgetInMillions }} million</p>
     <button v-on:click.prevent="addToFavorites(movie)">+ Add</button>
@@ -19,7 +17,7 @@ export default {
     },
     methods: {
         addToFavorites(movie) {
-            if (confirm("Add movie to your favorites? ")){
+            //if (confirm("Add movie to your favorites? ")){
             backendService.addMovieToDB(movie).then((response) => {
                 if (response.status == 201){
                     console.log(response);
@@ -29,7 +27,7 @@ export default {
                     console.log(response);
                     alert("Error adding movie to favorites");
                 });
-            }
+            //}
         }
     }
 }

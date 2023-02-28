@@ -1,6 +1,8 @@
 <template>
   <div class="card">
+    <router-link :to="{ name: 'character-quote', params: { id: character._id }}">
     <h2 class="character-name">{{ character.name }}</h2>
+    </router-link>
     <p>{{ character.race }}</p>
     <a :href="character.wikiUrl" target="blank">Wiki Page</a><br><br>
     <button v-on:click.prevent="addToFavorites(character)">+ Add</button>
@@ -17,7 +19,7 @@ export default {
     },
     methods: {
         addToFavorites(character) {
-            if (confirm("Add character to your favorites?")){
+            //if (confirm("Add character to your favorites?")){
                 backendService.addCharacterToDB(character).then((response) => {
                     if (response.status == 201){
                         console.log(response);
@@ -27,7 +29,7 @@ export default {
                     console.log(response);
                     alert("Error adding character to favorites");
                 });
-            }
+            //}
         }
     }
 }

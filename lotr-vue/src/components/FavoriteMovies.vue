@@ -19,7 +19,7 @@ export default {
     },
     methods: {
         removeFromFavorites(movieId) {
-            if (confirm("Remove movie from your favorites?")){
+            //if (confirm("Remove movie from your favorites?")){
                 backendService.deleteMovieFromDB(movieId).then((response) => {
                     if (response.status == 204){
                         console.log(response);
@@ -30,10 +30,9 @@ export default {
                     console.log(response);
                     alert("Error removing movie from favorites");
                 });
-            }
+            //}
         }
     }
-
 }
 </script>
 
