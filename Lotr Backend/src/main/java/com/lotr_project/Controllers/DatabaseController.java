@@ -55,7 +55,8 @@ public class DatabaseController {
     CharacterDao characterDao;
 
     @GetMapping("/myCharacters")
-    public List<Character> getAllCharacters() { return characterDao.getAllCharacters(); }
+    public List<Character> getAllCharacters() {
+        return characterDao.getAllCharacters(); }
 
     @GetMapping("/myCharacters/{id}")
     public Character getCharacterByCharacterId(@PathVariable int id) { return characterDao.getCharacterByCharacterId(id); }

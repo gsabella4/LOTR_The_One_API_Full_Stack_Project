@@ -20,12 +20,14 @@ public class LotrController {
     LotrService service;
 
     @GetMapping(path = "/movie")
-    public List<Movie> getAllMoviesFromApi() {
+    public List<Movie> getAllMoviesFromApi() throws InterruptedException {
+        Thread.sleep(500);
         return service.loadAllMovies();
     }
 
     @GetMapping("/character")
-    public List<Character> getAllCharactersFromApi(){
+    public List<Character> getAllCharactersFromApi() throws InterruptedException {
+        Thread.sleep(500);
         return service.loadAllCharacters();
     }
 
